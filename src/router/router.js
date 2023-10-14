@@ -8,6 +8,7 @@ import Login from "../components/Login.vue";
 import { authStore } from "../store/store";
 import Cart from "../components/Cart.vue";
 import User from "../components/User.vue";
+import EditProfile from "../components/EditProfile.vue";
 
 const routes = [
   {
@@ -35,6 +36,13 @@ const routes = [
     path: "/user",
     components: {
       default: User,
+      LeftSideBar: Sidebar,
+    },
+  },
+  {
+    path: "/edit-profile",
+    components: {
+      default: EditProfile,
       LeftSideBar: Sidebar,
     },
   },
